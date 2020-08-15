@@ -70,13 +70,14 @@ plotopt = {'workspace', ws, 'nobase', 'notiles', 'noshading', 'noshadow', 'nowri
 h = r.plot(ylist(:,1:r.n),plotopt{:});
 ```
 实验结果如下图所示。
+
 <img src="twolinkrtb.gif" alt="twolinkrtb" width="250" />
 
 下面进行simulink/simscape的双摆仿真，对比实验如下图所示，可以看到前面几乎是同步的。
 
-如何使用simscape搭建一个双摆系统，可以参考b站[这个视频](https://www.bilibili.com/video/BV1X741147a5)。
-
 <img src="twolinksim.gif" alt="twolinksim" width="250" />
+
+如何使用simscape搭建一个双摆系统，可以参考b站[这个视频](https://www.bilibili.com/video/BV1X741147a5)。
 
 # 源代码
 
