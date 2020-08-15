@@ -10,7 +10,7 @@
 
 我们要研究的是竖直平面上的2连杆机械臂，也可以说是双摆。因为本文不做控制，所以我们要模拟机械臂在重力的作用下运动的过程。
 
-![2连杆机械臂](https://star2dust.github.io/post-images/1597455589416.png)
+<img src="twolink.png" alt="twolink" width="250" />
 
 [这里](https://star2dust.github.io/post/matlab-rtb-two-link/)给出2连杆机械臂的动力学建模过程，之后可以代入数值验证代码正确性。
 
@@ -70,13 +70,13 @@ plotopt = {'workspace', ws, 'nobase', 'notiles', 'noshading', 'noshadow', 'nowri
 h = r.plot(ylist(:,1:r.n),plotopt{:});
 ```
 实验结果如下图所示。
-![twolinkRTB](https://star2dust.github.io/post-images/1597463398976.gif)
+<img src="twolinkrtb.gif" alt="twolinkrtb" width="250" />
 
 下面进行simulink/simscape的双摆仿真，对比实验如下图所示，可以看到前面几乎是同步的。
 
 如何使用simscape搭建一个双摆系统，可以参考b站[这个视频](https://www.bilibili.com/video/BV1X741147a5)。
 
-![twolinksim](https://star2dust.github.io/post-images/1597469468222.gif)
+<img src="twolinksim.gif" alt="twolinksim" width="250" />
 
 # 源代码
 
